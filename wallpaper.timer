@@ -1,0 +1,9 @@
+[Unit]
+Description=Run wallpaper.service every hour and afer each reboot
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1hour
+
+[Install]
+WantedBy=timers.target

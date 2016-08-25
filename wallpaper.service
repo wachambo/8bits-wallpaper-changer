@@ -1,0 +1,9 @@
+[Unit]
+Description=runs update-wallpaper.py
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python %h/sbin/8bits-wallpaper-changer/update-wallpaper.py
+
+[Install]
+WantedBy=default.target
